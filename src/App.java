@@ -15,5 +15,14 @@ public class App {
         }).run();
 
 
+//        System.out.println(new Incrementer() {
+//            @Override
+//            public int increment(int x) {
+//                return x + (int) (Math.random() * 100);
+//            }
+//        });
+        System.out.println((Incrementer) x -> x + (int) (Math.random() * 100));
+
+
     }
 }
