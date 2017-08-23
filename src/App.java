@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.function.Consumer;
+
 
 /**
  * Created by JaMachine on 8/21/2017.
@@ -46,13 +46,16 @@ public class App {
 
         ints.forEach(integer -> System.out.print(integer + " "));
 
+        System.out.println();
+
+        ints.forEach(System.out::print);
+
 //        ints.forEach(new Consumer<Integer>() {
 //            @Override
 //            public void accept(Integer integer) {
 //                System.out.print(integer + " ");
 //            }
 //        });
-        System.out.println();
 
 
     }
