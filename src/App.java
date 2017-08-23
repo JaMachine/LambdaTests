@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
 /**
  * Created by JaMachine on 8/21/2017.
  */
@@ -33,6 +36,23 @@ public class App {
 //                return x + (int) (Math.random() * 100);
 //            }
 //        };
+
+// ----------------------------------------------------------------------------------------------------------
+
+        ArrayList<Integer> ints = new ArrayList<>();
+
+        for (int i = 5; i > 0; i--)
+            ints.add(i);
+
+        ints.forEach(integer -> System.out.print(integer + " "));
+
+//        ints.forEach(new Consumer<Integer>() {
+//            @Override
+//            public void accept(Integer integer) {
+//                System.out.print(integer + " ");
+//            }
+//        });
+        System.out.println();
 
 
     }
