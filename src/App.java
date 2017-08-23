@@ -25,7 +25,9 @@ public class App {
 
         System.out.println(incrementer.increment(7));
 
-        //        Incrementer incrementer = new Incrementer() {
+//        Ха-Ха, и класс не нужен ;)
+
+//        Incrementer incrementer = new Incrementer() {
 //            @Override
 //            public int increment(int x) {
 //                return x + (int) (Math.random() * 100);
