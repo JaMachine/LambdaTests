@@ -5,23 +5,32 @@ public class App {
     public static void main(String[] args) {
 
         new Thread(() -> {
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    System.out.println("ТрэкШедулер 1");
+                    System.out.println("олд");
                 }
             }).run();
-            new Thread(() -> System.out.println("ТрэкШедулер 2")).run();
+
+            new Thread(() -> System.out.println("лямбда")).run();
+
         }).run();
 
 
-//        System.out.println(new Incrementer() {
+//-----------------------------------------------------------------------------------------------------------
+
+
+        Incrementer incrementer = x -> x + (int) (Math.random() * 100);
+
+        System.out.println(incrementer.increment(7));
+
+        //        Incrementer incrementer = new Incrementer() {
 //            @Override
 //            public int increment(int x) {
 //                return x + (int) (Math.random() * 100);
 //            }
-//        });
-        System.out.println((Incrementer) x -> x + (int) (Math.random() * 100));
+//        };
 
 
     }
